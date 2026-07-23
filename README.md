@@ -29,20 +29,20 @@ Si quieres ejecutar este proyecto en tu ordenador, sigue estos pasos:
 2. **Crea y activa un entorno virtual:**
     ```bash
     python -m venv venv
-# En Windows:
-    venv\Scripts\activate
-# En Mac/Linux:
-    source venv/bin/activate
+    # En Windows:
+        venv\Scripts\activate
+    # En Mac/Linux:
+        source venv/bin/activate
 
 
 3. **Instala las dependencias:**
     ```bash
-    pip inst
-all -r requirements.txt
+    pip install -r requirements.txt
 
 
 4. **Configura las variables de entorno:**
-    Crea un archivo llamado .env en la raíz del proyecto (este archivo ya está ignorado en Git por seguridad) y añade tu API_key:
+    ```bash
+    # Crea un archivo llamado .env en la raíz del proyecto (este archivo ya está ignorado en Git por seguridad) y añade tu API_key:
 
     API_SECRET_KEY=tu_clave_aqui
 
