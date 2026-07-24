@@ -1,3 +1,6 @@
+### ¡¡¡ PROYECTO  PROPIO !!! ###
+
+
 # 🎓 Esto es una aplicación de estudio con IA para alumnos de Bachillerato que se estan preparando la EBAU/PEvAU. En ella los alumnos podrán subir sus temarios y la aplicación utilizará la Inteligencia Artificial para crear resúmenes, esquemas, tendrán exámenes personalizados para practicar...
 
 
