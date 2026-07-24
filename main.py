@@ -1,8 +1,12 @@
 from fastapi import FastAPI, UploadFile, File, Response
 from google import genai
+from dotenv import load_dotenv
+from database import engine
 import pypdf
 import os
-from dotenv import load_dotenv
+import models
+
+models.Base.metadata.create_all(bind=engine)
 
 load_dotenv() #Para leer el archivo secreto .env
 
