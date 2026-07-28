@@ -1,7 +1,9 @@
+import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
-URL_BASE_DATOS = "sqlite:///estudiantes_ebau.db"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__)) # ruta exacta de la carpeta actual del proyecto
+URL_BASE_DATOS = f"sqlite:///{os.path.join(BASE_DIR, 'estudiantes_ebau.db')}" #URL absoluta papra que SQL seppa donde crear el archivo
 
 engine = create_engine(URL_BASE_DATOS, connect_args={"check_same_thread": False}) # conectando python con sqlite
 

@@ -1,10 +1,13 @@
 from fastapi import FastAPI, UploadFile, File, Response
+from database import engine
+import models
+
 from google import genai
 from dotenv import load_dotenv
-from database import engine
+
 import pypdf
 import os
-import models
+
 
 models.Base.metadata.create_all(bind=engine)
 
